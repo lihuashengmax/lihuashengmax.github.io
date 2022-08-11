@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-11T14:44:43.924Z</updated>
+  <updated>2022-08-11T14:54:13.949Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://example.com/2022/07/15/hello-world-1/"/>
     <id>http://example.com/2022/07/15/hello-world-1/</id>
     <published>2022-07-15T14:48:33.000Z</published>
-    <updated>2022-08-11T14:44:43.924Z</updated>
+    <updated>2022-08-11T14:54:13.949Z</updated>
     
     
     
     
-    <category term="ss" scheme="http://example.com/categories/ss/"/>
+    <category term="ssa" scheme="http://example.com/categories/ssa/"/>
     
     
   </entry>
