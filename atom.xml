@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-12T08:06:03.249Z</updated>
+  <updated>2022-08-13T01:13:51.125Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,15 +18,132 @@
   
   <entry>
     <title>随想</title>
-    <link href="http://example.com/2022/08/12/hello-world-1/"/>
-    <id>http://example.com/2022/08/12/hello-world-1/</id>
+    <link href="http://example.com/2022/08/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%B8%80/"/>
+    <id>http://example.com/2022/08/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%B8%80/</id>
     <published>2022-08-11T16:00:00.000Z</published>
-    <updated>2022-08-12T08:06:03.249Z</updated>
+    <updated>2022-08-13T01:13:51.125Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
+    
+    
+    
+    <category term="机器学习数学基础" scheme="http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3/</id>
+    <published>2022-08-11T16:00:00.000Z</published>
+    <updated>2022-08-13T01:14:13.447Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
+    
+    
+    
+    <category term="神经网络" scheme="http://example.com/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="http://example.com/2022/08/12/%E5%BC%80%E7%AF%87%E9%9A%8F%E6%83%B3/"/>
+    <id>http://example.com/2022/08/12/%E5%BC%80%E7%AF%87%E9%9A%8F%E6%83%B3/</id>
+    <published>2022-08-11T16:00:00.000Z</published>
+    <updated>2022-08-13T00:57:57.990Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
     
     
     
     <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="http://example.com/2022/08/12/%E9%9A%8F%E6%83%B3%E4%B9%8B%E4%B8%80/"/>
+    <id>http://example.com/2022/08/12/%E9%9A%8F%E6%83%B3%E4%B9%8B%E4%B8%80/</id>
+    <published>2022-08-11T16:00:00.000Z</published>
+    <updated>2022-08-13T00:57:57.990Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
+    
+    
+    
+    <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="http://example.com/2022/08/12/%E7%94%B5%E9%9F%B3%E4%B8%8E%E7%BC%96%E6%9B%B2%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/"/>
+    <id>http://example.com/2022/08/12/%E7%94%B5%E9%9F%B3%E4%B8%8E%E7%BC%96%E6%9B%B2%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/</id>
+    <published>2022-08-11T16:00:00.000Z</published>
+    <updated>2022-08-13T01:13:40.882Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
+    
+    
+    
+    <category term="电音与编曲" scheme="http://example.com/categories/%E7%94%B5%E9%9F%B3%E4%B8%8E%E7%BC%96%E6%9B%B2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="http://example.com/2022/08/12/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/"/>
+    <id>http://example.com/2022/08/12/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/</id>
+    <published>2022-08-11T16:00:00.000Z</published>
+    <updated>2022-08-13T01:14:02.386Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
+    
+    
+    
+    <category term="摄影笔记" scheme="http://example.com/categories/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
