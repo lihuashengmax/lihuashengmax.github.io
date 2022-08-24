@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-13T01:21:11.508Z</updated>
+  <updated>2022-08-13T00:57:57.990Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>随想</title>
-    <link href="http://example.com/2022/08/12/TED%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/"/>
-    <id>http://example.com/2022/08/12/TED%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/</id>
+    <link href="http://example.com/2022/08/12/%E5%BC%80%E7%AF%87%E9%9A%8F%E6%83%B3/"/>
+    <id>http://example.com/2022/08/12/%E5%BC%80%E7%AF%87%E9%9A%8F%E6%83%B3/</id>
     <published>2022-08-11T16:00:00.000Z</published>
-    <updated>2022-08-13T01:21:11.508Z</updated>
+    <updated>2022-08-13T00:57:57.990Z</updated>
     
     <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
     
@@ -33,7 +33,29 @@
     
     
     
-    <category term="TED笔记" scheme="http://example.com/categories/TED%E7%AC%94%E8%AE%B0/"/>
+    <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="http://example.com/2022/08/12/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/"/>
+    <id>http://example.com/2022/08/12/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/</id>
+    <published>2022-08-11T16:00:00.000Z</published>
+    <updated>2022-08-13T01:14:02.386Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+      
+    
+    
+    
+    <category term="摄影笔记" scheme="http://example.com/categories/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -62,22 +84,22 @@
   
   <entry>
     <title>随想</title>
-    <link href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3/</id>
+    <link href="http://example.com/2022/08/12/TED%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/"/>
+    <id>http://example.com/2022/08/12/TED%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/</id>
     <published>2022-08-11T16:00:00.000Z</published>
-    <updated>2022-08-22T11:54:01.997Z</updated>
+    <updated>2022-08-22T12:31:21.471Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="使用pytorch搭建神经网络步骤详解"><a href="#使用pytorch搭建神经网络步骤详解" class="headerlink" title="使用pytorch搭建神经网络步骤详解"></a>使用pytorch搭建神经网络步骤详解</h2><p>&emsp;&emsp;在做图像识别相关项目时，整个流程可分为“准备数据集”、“设计模型”、“构建损失函数与优化器”、“进行训练”四个步骤，pytorch提供了丰富的工具能够高效迅速地完成以上四个子任务。</p><h3 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h3><p>&emsp;&emsp;首先需要明确数据集构建过程中的几个重要名词。<br>&emsp;&emsp;epoch：一个epoch的完成表明训练数据集中的所有数据均已通过了一次网络模型。<br>&emsp;&emsp;batch-size：由于网络模型规模受限，实际训练时不可能一次性将训练数据集中所有数据都通过网络，因此需要将数据集中的数据分为一个个batch，其中batch的size通常为2的倍数。<br>&emsp;&emsp;iteration：表明迭代次数，一个迭代的完成表明一个batch的数据集已经通过了模型。<br>&emsp;&emsp;数据集构建的代码模板总结如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">from torch.utils.data import Dataset <span class="comment">#util是utiliy的缩写，意为实用工具包</span></span><br><span class="line">from torch.utils.data import DataLoader</span><br><span class="line">class MyDataset(Dataset): <span class="comment">#pytorch已经提供了抽象类Dataset，在其基础上构建子类进行继承，其中除了_init_外，_getitem_与_len_函数必须重写</span></span><br><span class="line">    def _init_(self):</span><br><span class="line">        pass</span><br><span class="line">    def _getitem_(self,index):</span><br><span class="line">        pass</span><br><span class="line">    def _len_(self):</span><br><span class="line">        pass</span><br><span class="line">dataset=MyDataset()</span><br><span class="line">train_loader=DataLoader(dataset=dataset,batch_size=32,shuffle=True,num_workers=2) <span class="comment">#num_workers表征了将指定序号的batch加载到RAM中的速度</span></span><br></pre></td></tr></table></figure></p><h3 id="设计模型"><a href="#设计模型" class="headerlink" title="设计模型"></a>设计模型</h3><p>&emsp;&emsp;pytorch提供了父类torch.nn.Module，通过继承该类可以构建不同的网络结构，设计模型的代码模板总结如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyNet</span>(torch.nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>(MyNet,self)._init_()</span><br><span class="line">        <span class="comment">#构建网络结构的每一层</span></span><br><span class="line">        <span class="comment">#self.layer1=torch.nn.***   每层结构</span></span><br><span class="line">        <span class="comment">#self.activate=torch.nn.*** 激活函数</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self,x</span>):</span><br><span class="line">        <span class="comment">#构建网络层间的激活函数关系</span></span><br><span class="line">        <span class="comment">#x=self.activate(self.layer1(x))</span></span><br><span class="line">        <span class="comment">#***</span></span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line">net=MyNet()</span><br></pre></td></tr></table></figure><br>&emsp;&emsp;TIPS：关于torch.nn与torch.nn.functional的异同可总结为下表。<br><!-- |torch.nn.\*\*\*|torch.nn.functional.\*\*\*||:------------------------------------------------------------------------:|:------------------------------------------------------------------------:||是类或者对象|是函数||类在每次实例化时内部参数都会进行初始化，因此类的实例化应放入_init_（只运行一次），每次对对象的调用应放入forward（多次运行），一般将层的实例化放入_init_，将实例化对象的调用放入forward|一般在该函数外部定义并初始化相应参数如在_init_，在forward中传入该参数运行函数| --><br><!-- | 商品 | 数量 || :-----: | :-----: || 是类或者对象 | 是函数 | --><br>|  表头   | 表头  |<br>|  ——  | ——  |<br>| 单元格  | 单元格 |<br>| 单元格  | 单元格 |<br>&emsp;&emsp;对于纯文本数字形式的数据集，网络结构以全连接层为主；对于图像形式的数据集，网络结构以全连接层与卷积层为主。<br>&emsp;&emsp;<br>&emsp;&emsp;</p><h3 id="构建损失函数与优化器"><a href="#构建损失函数与优化器" class="headerlink" title="构建损失函数与优化器"></a>构建损失函数与优化器</h3><h3 id="进行训练"><a href="#进行训练" class="headerlink" title="进行训练"></a>进行训练</h3>]]></content>
+    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>而博客能够完全满足该类需求。<br>以上。</p><div class="table-container"><table><thead><tr><th>表头</th><th>表头</th></tr></thead><tbody><tr><td>单元格</td><td>单元格</td></tr><tr><td>单元格</td><td>单元格</td></tr></tbody></table></div>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;使用pytorch搭建神经网络步骤详解&quot;&gt;&lt;a href=&quot;#使用pytorch搭建神经网络步骤详解&quot; class=&quot;headerlink&quot; title=&quot;使用pytorch搭建神经网络步骤详解&quot;&gt;&lt;/a&gt;使用pytorch搭建神经网络步骤详解&lt;/h2&gt;&lt;p&gt;&amp;e</summary>
+    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样</summary>
       
     
     
     
-    <category term="神经网络" scheme="http://example.com/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <category term="TED笔记" scheme="http://example.com/categories/TED%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -105,23 +127,23 @@
   </entry>
   
   <entry>
-    <title>随想</title>
-    <link href="http://example.com/2022/08/12/%E5%BC%80%E7%AF%87%E9%9A%8F%E6%83%B3/"/>
-    <id>http://example.com/2022/08/12/%E5%BC%80%E7%AF%87%E9%9A%8F%E6%83%B3/</id>
+    <title>如何利用pytorch搭建神经网络</title>
+    <link href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3/</id>
     <published>2022-08-11T16:00:00.000Z</published>
-    <updated>2022-08-13T00:57:57.990Z</updated>
+    <updated>2022-08-24T03:51:02.747Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="使用pytorch搭建神经网络步骤详解"><a href="#使用pytorch搭建神经网络步骤详解" class="headerlink" title="使用pytorch搭建神经网络步骤详解"></a>使用pytorch搭建神经网络步骤详解</h2><p>&emsp;&emsp;在做图像识别相关项目时，整个流程可分为“准备数据集”、“设计模型”、“构建损失函数与优化器”、“进行训练”四个步骤，pytorch提供了丰富的工具能够高效迅速地完成以上四个子任务。</p><h3 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h3><p>&emsp;&emsp;首先需要明确数据集构建过程中的几个重要名词。</p><ul><li><p><strong>epoch</strong>：一个epoch的完成表明训练数据集中的所有数据均已通过了一次网络模型。</p></li><li><p><strong>batch-size</strong>：由于网络模型规模受限，实际训练时不可能一次性将训练数据集中所有数据都通过网络，因此需要将数据集中的数据分为一个个batch，其中batch的size通常为2的倍数。</p></li><li><p><strong>iteration</strong>：表明迭代次数，一个迭代的完成表明一个batch的数据集已经通过了模型。</p></li></ul><p>&emsp;&emsp;数据集构建的代码模板总结如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> Dataset <span class="comment">#util是utiliy的缩写，意为实用工具包</span></span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyDataset</span>(<span class="title class_ inherited__">Dataset</span>): <span class="comment">#pytorch已经提供了抽象类Dataset，在其基础上构建子类进行继承，其中除了_init_外，_getitem_与_len_函数必须重写</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_getitem_</span>(<span class="params">self,index</span>):</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_len_</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">dataset=MyDataset()</span><br><span class="line">train_loader=DataLoader(dataset=dataset,batch_size=<span class="number">32</span>,shuffle=<span class="literal">True</span>,num_workers=<span class="number">2</span>) <span class="comment">#num_workers表征了将指定序号的batch加载到RAM中的速度</span></span><br></pre></td></tr></table></figure><h3 id="设计模型"><a href="#设计模型" class="headerlink" title="设计模型"></a>设计模型</h3><p>&emsp;&emsp;pytorch提供了父类torch.nn.Module，通过继承该类可以构建不同的网络结构，设计模型的代码模板总结如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyNet</span>(torch.nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>(MyNet,self)._init_()</span><br><span class="line">        <span class="comment">#构建网络结构的每一层</span></span><br><span class="line">        <span class="comment">#self.layer1=torch.nn.***   每层结构</span></span><br><span class="line">        <span class="comment">#self.activate=torch.nn.*** 激活函数</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self,x</span>):</span><br><span class="line">        <span class="comment">#构建网络层间的激活函数关系</span></span><br><span class="line">        <span class="comment">#x=self.activate(self.layer1(x))</span></span><br><span class="line">        <span class="comment">#***</span></span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line">net=MyNet()</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;TIPS：关于torch.nn与torch.nn.functional的异同可总结为下表。</p><div class="table-container"><table><thead><tr><th style="text-align:center">torch.nn.***</th><th style="text-align:center">torch.nn.functional.***</th></tr></thead><tbody><tr><td style="text-align:center">是类或者对象</td><td style="text-align:center">是函数</td></tr><tr><td style="text-align:center">类在每次实例化时内部参数都会进行初始化，因此类的实例化应放入_init_（只运行一次），每次对对象的调用应放入forward（多次运行），一般将层的实例化放入_init_，将实例化对象的调用放入forward</td><td style="text-align:center">一般在该函数外部定义并初始化相应参数比如在_init_，在forward中传入该参数运行函数</td></tr></tbody></table></div><p>&emsp;&emsp;对于纯文本数字形式的数据集，网络结构以全连接层为主；对于图像形式的数据集，网络结构以全连接层与卷积层为主，具体的代码形式及意义如下：</p><ul><li><strong>全连接层（又称线性层）</strong>：torch.nn.Linear(in_features,out_features,bias=True)</li></ul><p>&emsp;&emsp;其对传入该层的数据进行线性变换$y=xW+b$，其中$x$为一$n$行$H<em>{in}$列矩阵，$n$等于$batch\</em> size$，$H<em>{in}$为线性层输入数据的特征数；$W$为一$H</em>{in}$行$H<em>{out}$列矩阵，决定了该线性层输出数据的特征数；$b$为一$n$行$H</em>{out}$列矩阵，$n$等于$batch_ size$，$H_{out}$为线性层输出数据的特征数。</p><ul><li><strong>卷积层（二维）</strong>：torch.nn.Conv2d(in_channels,out_channels,kernel_size,stride=1,padding=0,dilation=1,groups=1,bias=True,padding_mode=’zeros’,device=None)</li></ul><p>&emsp;&emsp;</p><h3 id="构建损失函数与优化器"><a href="#构建损失函数与优化器" class="headerlink" title="构建损失函数与优化器"></a>构建损失函数与优化器</h3><p>&emsp;&emsp;构建损失函数与优化器的代码模板总结如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line">criterion=torch.nn.***</span><br><span class="line">optimizer=optim.***</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;在此对一些基本的损失函数及其计算方式加以说明：</p><ul><li><p><strong>MSELoss（Mean Square Error Loss）</strong>:均方损失函数，$loss=\sum(y_i-\hat{y})^2$，多用于回归问题。</p></li><li><p><strong>CrossEntropyLoss</strong>：交叉熵损失函数，其输入为神经网络最后一层全连接层的输出，CrossEntropyLoss首先将其通过softmax激活函数，其公式为$softmax(x_i)=\frac{exp(x_i)}{\sum exp(x_j)}$；然后</p></li><li><strong>NLLLoss（Negative Log Likelihood Loss）</strong>：负对数似然损失函数，<h3 id="进行训练"><a href="#进行训练" class="headerlink" title="进行训练"></a>进行训练</h3></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
+    <summary type="html">&lt;h2 id=&quot;使用pytorch搭建神经网络步骤详解&quot;&gt;&lt;a href=&quot;#使用pytorch搭建神经网络步骤详解&quot; class=&quot;headerlink&quot; title=&quot;使用pytorch搭建神经网络步骤详解&quot;&gt;&lt;/a&gt;使用pytorch搭建神经网络步骤详解&lt;/h2&gt;&lt;p&gt;&amp;e</summary>
       
     
     
     
-    <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
+    <category term="神经网络" scheme="http://example.com/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
     
   </entry>
@@ -144,28 +166,6 @@
     
     
     <category term="电音与编曲" scheme="http://example.com/categories/%E7%94%B5%E9%9F%B3%E4%B8%8E%E7%BC%96%E6%9B%B2/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>随想</title>
-    <link href="http://example.com/2022/08/12/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/"/>
-    <id>http://example.com/2022/08/12/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/</id>
-    <published>2022-08-11T16:00:00.000Z</published>
-    <updated>2022-08-13T01:14:02.386Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;BLOG开篇简辞&quot;&gt;&lt;a href=&quot;#BLOG开篇简辞&quot; class=&quot;headerlink&quot; title=&quot;BLOG开篇简辞&quot;&gt;&lt;/a&gt;BLOG开篇简辞&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取</summary>
-      
-    
-    
-    
-    <category term="摄影笔记" scheme="http://example.com/categories/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
