@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="BLOG开篇简辞&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。&amp;emsp;&amp;emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。&amp;emsp;&amp;emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己">
+  <meta name="description" content="关于缓解神经网络训练过拟合的方法正则化（regularization）的技术之一：权重衰减（weight decay）&amp;emsp;&amp;emsp;首先明确$L_1$与$L_2$范数的定义：对于矩阵$\mathbf{X}\in\mathbb{R}^{m\times n}$，其$L_1$范数为$\Vert\mathbf{x}\Vert_1&#x3D;\sum^{m}_{i&#x3D;1}\sum^{n}_{j&#x3D;1}\vert">
 <meta property="og:type" content="article">
-<meta property="og:title" content="随想">
-<meta property="og:url" content="http://example.com/2022/08/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%B8%80/index.html">
+<meta property="og:title" content="神经网络随记之七：关于缓解神经网络训练过拟合的方法">
+<meta property="og:url" content="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%B8%83/index.html">
 <meta property="og:site_name" content="李桦笙的博客">
-<meta property="og:description" content="BLOG开篇简辞&amp;emsp;&amp;emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。&amp;emsp;&amp;emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。&amp;emsp;&amp;emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己">
+<meta property="og:description" content="关于缓解神经网络训练过拟合的方法正则化（regularization）的技术之一：权重衰减（weight decay）&amp;emsp;&amp;emsp;首先明确$L_1$与$L_2$范数的定义：对于矩阵$\mathbf{X}\in\mathbb{R}^{m\times n}$，其$L_1$范数为$\Vert\mathbf{x}\Vert_1&#x3D;\sum^{m}_{i&#x3D;1}\sum^{n}_{j&#x3D;1}\vert">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-08-11T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-13T01:13:51.125Z">
+<meta property="article:modified_time" content="2022-09-03T06:42:45.879Z">
 <meta property="article:author" content="李桦笙">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/08/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%B8%80/">
+<link rel="canonical" href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%B8%83/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>随想 | 李桦笙的博客</title>
+  <title>神经网络随记之七：关于缓解神经网络训练过拟合的方法 | 李桦笙的博客</title>
   
 
 
@@ -186,7 +186,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%B8%80/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%B8%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gk.jpeg">
@@ -199,7 +199,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          随想
+          神经网络随记之七：关于缓解神经网络训练过拟合的方法
         </h1>
 
         <div class="post-meta">
@@ -216,7 +216,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-08-13 09:13:51" itemprop="dateModified" datetime="2022-08-13T09:13:51+08:00">2022-08-13</time>
+                <time title="修改时间：2022-09-03 14:42:45" itemprop="dateModified" datetime="2022-09-03T14:42:45+08:00">2022-09-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,7 +224,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">机器学习数学基础</span></a>
+                  <a href="/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">神经网络</span></a>
                 </span>
             </span>
 
@@ -239,7 +239,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="BLOG开篇简辞"><a href="#BLOG开篇简辞" class="headerlink" title="BLOG开篇简辞"></a>BLOG开篇简辞</h2><p>&emsp;&emsp;在这个信息碎片化的互联网时代，人们往往更热衷于通过较为快捷的方式获取知识或者信息，大脑在这样的行为中会逐渐削弱自身的独立思考与判断能力。<br>&emsp;&emsp;人们不再愿意静下心来好好花上一阵子时间来阅读与反思，思想会变得肤浅且丧失主见。<br>&emsp;&emsp;作为上述情况的补救，通过文字的撰写而锻炼自己的大脑是一种低成本且易施行的方法，通过大量的文章将自己的知识体系与随笔感想进行梳理与回顾，修正大脑的思维方式，将信息系统化与深刻化。<br>&emsp;&emsp;而博客能够完全满足该类需求。<br>&emsp;&emsp;以上。</p>
+        <h2 id="关于缓解神经网络训练过拟合的方法"><a href="#关于缓解神经网络训练过拟合的方法" class="headerlink" title="关于缓解神经网络训练过拟合的方法"></a>关于缓解神经网络训练过拟合的方法</h2><h3 id="正则化（regularization）的技术之一：权重衰减（weight-decay）"><a href="#正则化（regularization）的技术之一：权重衰减（weight-decay）" class="headerlink" title="正则化（regularization）的技术之一：权重衰减（weight decay）"></a>正则化（regularization）的技术之一：权重衰减（weight decay）</h3><p>&emsp;&emsp;首先明确$L_1$与$L_2$范数的定义：对于矩阵$\mathbf{X}\in\mathbb{R}^{m\times n}$，其$L_1$范数为$\Vert\mathbf{x}\Vert_1=\sum^{m}_{i=1}\sum^{n}_{j=1}\vert x_{ij}\vert$，其$L_2$范数为$\Vert\mathbf{x}\Vert_2=\sqrt{\sum^{m}_{i=1}\sum^{n}_{j=1}x^2_{ij}}$。</p>
+<p>&emsp;&emsp;在训练参数化机器学习模型时，权重衰减（weight decay）是最⼴泛使⽤的正则化的技术之⼀，其通常也被称为$L_2$正则化，具体操作为在神经网络原有的损失函数基础上增添权重矩阵的$L_2$范数项，即$loss_{new}=loss_{old}+\sum\frac{2}{\lambda}\Vert\mathbf{w}\Vert^2$。</p>
+<h3 id="正则化（regularization）的技术之二：暂退法（dropout）"><a href="#正则化（regularization）的技术之二：暂退法（dropout）" class="headerlink" title="正则化（regularization）的技术之二：暂退法（dropout）"></a>正则化（regularization）的技术之二：暂退法（dropout）</h3><p>&emsp;&emsp;暂退法的使用相当于在神经网络中新增添了一个dropout层（通常加在激活函数层后），该层对接收到的特征向量$\mathbf{x}$进行暂退处理，即：</p>
+<script type="math/tex; mode=display">
+x_i=\left\{
+\begin{array}{l}
+0\ \ \ \ \ \ \ \ \ \ \ 概率为p\\
+\frac{x_i}{1-p} \ \ \ \ \ \ \ 其它情况  
+\end{array}
+\right.</script><p>以保证期望不变，其中$p$值由$dropout$值决定，一般来说，dropout层仅在训练网络时使用，而在测试网络时不发挥其功能。</p>
 
     </div>
 
@@ -284,7 +293,7 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/08/12/TED%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/" rel="prev" title="随想">
+    <a href="/2022/08/12/%E7%94%B5%E9%9F%B3%E4%B8%8E%E7%BC%96%E6%9B%B2%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%B8%80/" rel="prev" title="随想">
       <i class="fa fa-chevron-left"></i> 随想
     </a></div>
       <div class="post-nav-item">
@@ -349,7 +358,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#BLOG%E5%BC%80%E7%AF%87%E7%AE%80%E8%BE%9E"><span class="nav-number">1.</span> <span class="nav-text">BLOG开篇简辞</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E7%BC%93%E8%A7%A3%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AE%AD%E7%BB%83%E8%BF%87%E6%8B%9F%E5%90%88%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">关于缓解神经网络训练过拟合的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E5%8C%96%EF%BC%88regularization%EF%BC%89%E7%9A%84%E6%8A%80%E6%9C%AF%E4%B9%8B%E4%B8%80%EF%BC%9A%E6%9D%83%E9%87%8D%E8%A1%B0%E5%87%8F%EF%BC%88weight-decay%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">正则化（regularization）的技术之一：权重衰减（weight decay）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E5%8C%96%EF%BC%88regularization%EF%BC%89%E7%9A%84%E6%8A%80%E6%9C%AF%E4%B9%8B%E4%BA%8C%EF%BC%9A%E6%9A%82%E9%80%80%E6%B3%95%EF%BC%88dropout%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">正则化（regularization）的技术之二：暂退法（dropout）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -365,14 +374,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
@@ -462,6 +471,61 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

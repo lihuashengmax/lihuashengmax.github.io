@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="技而无术，知而上进">
-<meta property="og:type" content="website">
-<meta property="og:title" content="李桦笙的博客">
-<meta property="og:url" content="http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/index.html">
+  <meta name="description" content="关于pytorch中的迭代器与生成器什么是迭代器与生成器pytorch中的迭代器与生成器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="神经网络随记之五：关于pytorch中的迭代器与生成器">
+<meta property="og:url" content="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%BA%94/index.html">
 <meta property="og:site_name" content="李桦笙的博客">
-<meta property="og:description" content="技而无术，知而上进">
+<meta property="og:description" content="关于pytorch中的迭代器与生成器什么是迭代器与生成器pytorch中的迭代器与生成器">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-02T10:44:03.810Z">
 <meta property="article:author" content="李桦笙">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">
+<link rel="canonical" href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%BA%94/">
 
 
 <script id="page-configurations">
@@ -38,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: 机器学习数学基础 | 李桦笙的博客</title>
+  <title>神经网络随记之五：关于pytorch中的迭代器与生成器 | 李桦笙的博客</title>
   
 
 
@@ -177,51 +179,123 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">机器学习数学基础
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%BA%94/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gk.jpeg">
+      <meta itemprop="name" content="李桦笙">
+      <meta itemprop="description" content="技而无术，知而上进">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李桦笙的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          神经网络随记之五：关于pytorch中的迭代器与生成器
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-08-12 00:00:00" itemprop="dateCreated datePublished" datetime="2022-08-12T00:00:00+08:00">2022-08-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-09-02 18:44:03" itemprop="dateModified" datetime="2022-09-02T18:44:03+08:00">2022-09-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">神经网络</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h2 id="关于pytorch中的迭代器与生成器"><a href="#关于pytorch中的迭代器与生成器" class="headerlink" title="关于pytorch中的迭代器与生成器"></a>关于pytorch中的迭代器与生成器</h2><h3 id="什么是迭代器与生成器"><a href="#什么是迭代器与生成器" class="headerlink" title="什么是迭代器与生成器"></a>什么是迭代器与生成器</h3><h3 id="pytorch中的迭代器与生成器"><a href="#pytorch中的迭代器与生成器" class="headerlink" title="pytorch中的迭代器与生成器"></a>pytorch中的迭代器与生成器</h3>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-08-12T00:00:00+08:00"
-              content="2022-08-12">
-          08-12
-        </time>
-      </div>
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/08/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%B8%80/" itemprop="url">
-            <span itemprop="name">随想</span>
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
           </a>
-      </div>
+        </div>
 
-    </header>
-  </article>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
 
+            <span class="label">RSS</span>
+          </a>
+        </div>
     </div>
   </div>
-  
-  
-  
 
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E5%9B%9B/" rel="prev" title="神经网络随记之四：关于多层感知机中的激活函数">
+      <i class="fa fa-chevron-left"></i> 神经网络随记之四：关于多层感知机中的激活函数
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/08/12/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%9A%8F%E8%AE%B0%E4%B9%8B%E4%B8%89/" rel="next" title="神经网络随记之三：关于softmax函数中的数值问题">
+      神经网络随记之三：关于softmax函数中的数值问题 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -274,6 +348,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8Epytorch%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">关于pytorch中的迭代器与生成器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8"><span class="nav-number">1.1.</span> <span class="nav-text">什么是迭代器与生成器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pytorch%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">pytorch中的迭代器与生成器</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -289,14 +364,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
@@ -386,6 +461,61 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
